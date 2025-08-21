@@ -44,7 +44,7 @@ if PYTHON3:
         return isinstance(value, Callable)
 
     basestring = str
-    from imp import reload
+    from importlib import reload
 else:
     __metaclass__ = type
 
